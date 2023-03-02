@@ -61,3 +61,11 @@ button{
 ::placeholder {
     color: white;
   }
+
+body {
+    background-image: url(./paddle.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position-y: center;
+  }
