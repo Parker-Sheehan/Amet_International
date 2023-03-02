@@ -62,8 +62,8 @@ button{
     color: white;
   }
 
-body {
-    background-image: url(./paddle.jpg);
+img {
+    z-index: -1;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
