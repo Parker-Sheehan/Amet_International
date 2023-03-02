@@ -60,9 +60,10 @@ button{
 
 ::placeholder {
     color: white;
-  }
+  } 
 
-img {
+body {
+    background-image: url(/image);
     z-index: -1;
     background-repeat: no-repeat;
     background-attachment: fixed;  
