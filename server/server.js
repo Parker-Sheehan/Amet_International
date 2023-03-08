@@ -30,7 +30,19 @@ app.get('/js', (req, res) => {
 })
 
 app.get('/image', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, '../public/paddle.jpg'))
+    res.status(200).sendFile(path.join(__dirname, '../public/paddle.png'))
+})
+
+app.post('/api/submit', (req,res) => {
+    console.log(req.id)
+    rollbar.log("Someone sent something in email")
+    res.sendStatus(200)
+})
+
+app.post('/api/currentText', (req,res) => {
+    console.log(req)
+    rollbar.log("Someone typed something")
+    res.sendStatus(200)
 })
 
 app.listen(4000, console.log(`App running on 4000`))
